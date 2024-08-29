@@ -1,0 +1,5 @@
+$font-primary: "../assets/fonts";
+@font-face {
+  src: url(#{$font-primary}/rumblebrave.otf);
+  font-family: 'font-primary';
+}

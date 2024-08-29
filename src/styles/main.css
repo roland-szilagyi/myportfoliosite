@@ -1,0 +1,43 @@
+/*
+@include screen(laptop) {
+  width: 80vw;
+}
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-decoration: none;
+}
+
+body {
+  font-size: 15px;
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  font-weight: 100;
+}
+
+@font-face {
+  src: url(../assets/fonts/rumblebrave.otf);
+  font-family: "font-primary";
+}/*# sourceMappingURL=main.css.map */
