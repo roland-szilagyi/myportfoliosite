@@ -1,6 +1,4 @@
 header {
   @include flex(flex, row, space-between, center, nowrap);
-  
-  width: 100vw;
-  height: 5rem;
+  @include size(100vw, 5rem);
 }

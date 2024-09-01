@@ -6,3 +6,9 @@
   align-items: $align-items;
   flex-wrap: $flex-wrap;
 }
+
+// SIZE
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
