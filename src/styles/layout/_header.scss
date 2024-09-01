@@ -26,7 +26,7 @@ h1 {
   .social-links {
     display: none;
     // MQ
-    @include screen(tablet) {
+    @include screen(desktop) {
       @include flex(flex, row, space-between, center, nowrap);
     }
 
