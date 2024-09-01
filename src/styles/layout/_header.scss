@@ -5,7 +5,7 @@ header {
 
 h1 {
   font-family: 'font-secondary';
-  @include font-size(2.8rem, 0.1rem, normal);
+  @include font-size(2rem, 0.1rem, normal);
   /* @include screen(tablet) {
     font-size: 5rem;
   } */
@@ -24,9 +24,19 @@ h1 {
 
   .social-links {
     @include flex(flex, row, space-between, center, nowrap);
+
+    svg {
+      fill: $color-quinary;
+    }
   }
 
   .menu-toggle {
     @include flex(flex, row, space-between, center, nowrap);
+
+    svg {
+      width: 1rem;
+      height: 1rem;
+      fill: $color-quinary;
+    }
   }
 }
