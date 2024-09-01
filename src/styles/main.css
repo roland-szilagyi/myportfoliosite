@@ -44,4 +44,13 @@ p, h1, h2, h3, h4, h5, h6 {
 @font-face {
   src: url(../assets/fonts/rumblebrave.otf);
   font-family: "font-primary";
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100vw;
+  height: 5rem;
 }/*# sourceMappingURL=main.css.map */
