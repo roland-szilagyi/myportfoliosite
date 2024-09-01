@@ -42,8 +42,12 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 @font-face {
-  src: url(../assets/fonts/rumblebrave.otf);
+  src: url(../assets/fonts/lexiamono-light.ttf);
   font-family: "font-primary";
+}
+@font-face {
+  src: url(../assets/fonts/adventure.otf);
+  font-family: "font-secondary";
 }
 header {
   display: flex;
@@ -53,4 +57,10 @@ header {
   flex-wrap: nowrap;
   width: 100vw;
   height: 5rem;
+}
+header h1 {
+  font-family: "font-secondary";
+  font-size: 2.8rem;
+  letter-spacing: 0.1rem;
+  line-height: normal;
 }/*# sourceMappingURL=main.css.map */

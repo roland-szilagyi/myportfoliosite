@@ -1,5 +1,11 @@
 $font-primary: "../assets/fonts";
 @font-face {
-  src: url(#{$font-primary}/rumblebrave.otf);
+  src: url(#{$font-primary}/lexiamono-light.ttf);
   font-family: 'font-primary';
+}
+
+$font-secondary: "../assets/fonts";
+@font-face {
+  src: url(#{$font-secondary}/adventure.otf);
+  font-family: 'font-secondary';
 }

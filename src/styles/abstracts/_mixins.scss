@@ -7,8 +7,15 @@
   flex-wrap: $flex-wrap;
 }
 
-// SIZE
-@mixin size($width, $height) {
+// BOX
+@mixin box($width, $height) {
   width: $width;
   height: $height;
+}
+
+// FONT-SIZE
+@mixin font-size($font-size, $letter-spacing, $line-height) {
+  font-size: $font-size;
+  letter-spacing: $letter-spacing;
+  line-height: $line-height;
 }
