@@ -1,8 +1,7 @@
-$breakpoint-mobil: 375px;        // 375-480
-$breakpoint-tablet: 481px;       // 481-768
-$breakpoint-laptop: 769px;       // 769-1024
-$breakpoint-desktop: 1025px;     // 1025-1200
-$breakpoint-xldesktop: 1201px;   // 1201-
+$breakpoint-mobil: 375px;        // 375-768
+$breakpoint-tablet: 768px;       // 768-1024
+$breakpoint-desktop: 1024px;     // 1024-1200
+$breakpoint-xldesktop: 1200px;   // 1201-
 
 // MOBILE FIRST MEDIA QUERY
 @mixin screen($size, $type: min, $pixels: $breakpoint-mobil) {

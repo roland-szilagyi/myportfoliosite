@@ -58,9 +58,48 @@ header {
   width: 100vw;
   height: 5rem;
 }
-header h1 {
+
+h1 {
   font-family: "font-secondary";
   font-size: 2.8rem;
   letter-spacing: 0.1rem;
   line-height: normal;
+  /* @include screen(tablet) {
+    font-size: 5rem;
+  } */
+}
+
+.primary-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.primary-links h2 {
+  font-size: 1rem;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.secondary-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.secondary-links .social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.secondary-links .menu-toggle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
 }/*# sourceMappingURL=main.css.map */
