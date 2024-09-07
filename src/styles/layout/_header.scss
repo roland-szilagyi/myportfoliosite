@@ -1,53 +1,32 @@
 header {
   @include flex(flex, row, space-between, center, nowrap);
   @include box(100vw, 5rem);
-}
 
-h1 {
-  font-family: 'font-secondary';
-  @include font-size(2rem, 0.1rem, normal);
-}
+  &__title {
 
-.primary-links {
-  display: none;
-  // MQ
-  @include screen(tablet) {
-    @include flex(flex, row, space-between, center, nowrap);
-  }
+    h1 {
 
-  h2 {
-    @include font-size(1rem, normal, normal);
-  }
-}
-
-.secondary-links {
-  @include flex(flex, row, space-between, center, nowrap);
-
-  .social-links {
-    display: none;
-    // MQ
-    @include screen(desktop) {
-      @include flex(flex, row, space-between, center, nowrap);
-    }
-
-    svg {
-      fill: $color-quinary;
     }
   }
 
-  .menu-toggle {
-    @include flex(flex, row, space-between, center, nowrap);
+  &__links {
 
-    svg {
-      width: 1rem;
-      height: 1rem;
-      fill: $color-quinary;
+    h2 {
+
     }
-    // MQ
-    @include screen(tablet) {
-      svg:nth-of-type(2) {
-        display: none;
+  }
+
+  nav {
+
+    &__primary {
+
+      .primary__link {
+        
       }
+    }
+
+    &__secondary {
+
     }
   }
 }
