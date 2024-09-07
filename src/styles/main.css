@@ -57,4 +57,29 @@ header {
   flex-wrap: nowrap;
   width: 100vw;
   height: 5rem;
+}
+header .header__title {
+  outline: 1px dashed yellow;
+}
+header .header__title h1 {
+  font-family: "font-secondary";
+}
+header .header__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  outline: 1px dashed yellow;
+}
+header .header__links h2 {
+  font-family: "font-secondary";
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  outline: 1px dashed yellow;
 }/*# sourceMappingURL=main.css.map */

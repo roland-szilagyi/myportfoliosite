@@ -2,30 +2,33 @@ header {
   @include flex(flex, row, space-between, center, nowrap);
   @include box(100vw, 5rem);
 
-  &__title {
-
+  .header__title {
+    @include outline;
     h1 {
-
+      font-family: 'font-secondary';
     }
   }
 
-  &__links {
+  .header__links {
+    @include flex(flex, row, center, center, nowrap);
+    @include outline;
 
     h2 {
-
+      font-family: 'font-secondary';
     }
   }
 
   nav {
-
-    &__primary {
+    @include flex(flex, row, center, center, nowrap);
+    @include outline;
+    .nav__primary {
 
       .primary__link {
         
       }
     }
 
-    &__secondary {
+    .nav__secondary {
 
     }
   }
