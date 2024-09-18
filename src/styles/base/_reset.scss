@@ -10,10 +10,9 @@ body {
   font-size: 15px;
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
-  color: $color-basic;
-  background: linear-gradient($color-primary, $color-secondary);
+  color: $color-white;
+  background: linear-gradient($color-primary, $color-quinary);
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 ol, ul {

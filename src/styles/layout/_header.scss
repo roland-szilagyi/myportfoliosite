@@ -1,35 +1,38 @@
 header {
-  @include flex(flex, row, space-between, center, nowrap);
-  @include box(100vw, 5rem);
+  @include flex(flex, column, center, center, nowrap);
+  @include box(100vw, 100vh);
+  @include outline;
 
-  .header__title {
-    @include outline;
-    h1 {
+  h1 {
+    font-family: 'font-primary';
+    font-size: 2rem;
+  }
+
+  .software-dev {
+    @include flex(flex, row, center, center, nowrap);
+    p {
       font-family: 'font-secondary';
+      font-size: 1.6rem;
+      opacity: 0.9;
+    }
+
+    img {
+      margin: 0 0.5rem;
+      width: 1.8rem;
     }
   }
 
-  .header__links {
+  .social-cont {
     @include flex(flex, row, center, center, nowrap);
-    @include outline;
 
-    h2 {
-      font-family: 'font-secondary';
-    }
-  }
-
-  nav {
-    @include flex(flex, row, center, center, nowrap);
-    @include outline;
-    .nav__primary {
-
-      .primary__link {
-        
-      }
+    img {
+      width: 1.6rem;
+      height: auto;
+      opacity: 0.7;
     }
 
-    .nav__secondary {
-
+    img:hover {
+      opacity: 0.9;
     }
   }
 }

@@ -17,10 +17,9 @@ body {
   font-size: 15px;
   line-height: 1.2;
   -webkit-font-smoothing: antialiased;
-  color: whitesmoke;
-  background: linear-gradient(#128FC8, #00468B);
+  color: #FFFFFF;
+  background: linear-gradient(#001720, #03303A);
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 ol, ul {
@@ -42,44 +41,88 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 @font-face {
-  src: url(../assets/fonts/lexiamono-light.ttf);
+  src: url(../assets/fonts/montserrat-arabicsemibold.otf);
   font-family: "font-primary";
 }
 @font-face {
-  src: url(../assets/fonts/adventure.otf);
+  src: url(../assets/fonts/antonio-variablefont.ttf);
   font-family: "font-secondary";
 }
+button {
+  display: inline-flex;
+  background-color: #054252;
+  border: 0;
+  border-radius: 2rem;
+  box-sizing: border-box;
+  color: #5EEAD4;
+  cursor: pointer;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell, "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 20px;
+  padding: 0.8rem 2.5rem;
+  text-align: center;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+button:hover,
+button:focus {
+  background-color: #00556B;
+  color: #FFFFFF;
+}
+
+button:active {
+  background: #03303A;
+  color: #859A9F;
+}
+
 header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   width: 100vw;
-  height: 5rem;
-}
-header .header__title {
+  height: 100vh;
   outline: 1px dashed yellow;
 }
-header .header__title h1 {
-  font-family: "font-secondary";
+header h1 {
+  font-family: "font-primary";
+  font-size: 2rem;
 }
-header .header__links {
+header .software-dev {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  outline: 1px dashed yellow;
 }
-header .header__links h2 {
+header .software-dev p {
   font-family: "font-secondary";
+  font-size: 1.6rem;
+  opacity: 0.9;
 }
-header nav {
+header .software-dev img {
+  margin: 0 0.5rem;
+  width: 1.8rem;
+}
+header .social-cont {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  outline: 1px dashed yellow;
+}
+header .social-cont img {
+  width: 1.6rem;
+  height: auto;
+  opacity: 0.7;
+}
+header .social-cont img:hover {
+  opacity: 0.9;
 }/*# sourceMappingURL=main.css.map */

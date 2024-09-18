@@ -1,11 +1,11 @@
 $font-primary: "../assets/fonts";
 @font-face {
-  src: url(#{$font-primary}/lexiamono-light.ttf);
+  src: url(#{$font-primary}/montserrat-arabicsemibold.otf);
   font-family: 'font-primary';
 }
 
 $font-secondary: "../assets/fonts";
 @font-face {
-  src: url(#{$font-secondary}/adventure.otf);
+  src: url(#{$font-secondary}/antonio-variablefont.ttf);
   font-family: 'font-secondary';
 }
