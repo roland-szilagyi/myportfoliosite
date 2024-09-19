@@ -1,0 +1,30 @@
+main {
+  @include flex(flex, column, center, center, nowrap);
+  @include box(100vw, 90vh);
+  // @include outline;
+
+  .hero__cont {
+    @include flex(flex, column, center, center, nowrap);
+    // @include outline;
+
+    h1 {
+      font-family: 'font-primary';
+      font-size: $font-size-md;
+      margin: $spacing-md;
+      // @include outline;
+    }
+
+    p {
+      font-family: 'font-secondary';
+      font-size: $font-size-xs;
+      opacity: .9;
+      // @include outline;
+    }
+
+    // button (in _buttons.scss)
+    .button--hero {
+      // @include outline;
+      margin: 3rem 0;
+    }
+  }
+}

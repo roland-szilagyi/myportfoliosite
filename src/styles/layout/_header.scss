@@ -1,37 +1,27 @@
 header {
-  @include flex(flex, column, center, center, nowrap);
-  @include box(100vw, 100vh);
-  @include outline;
+  @include flex(flex, row, space-between, center, nowrap);
+  @include box(100vw, 10vh);
+  // @include outline;
 
-  h1 {
-    font-family: 'font-primary';
-    font-size: 2rem;
-  }
+  .logo__cont {
+    width: auto;
+    height: 5vh;
+    // @include outline;
 
-  .software-dev {
-    @include flex(flex, row, center, center, nowrap);
-    p {
-      font-family: 'font-secondary';
-      font-size: 1.6rem;
+    img {
+      max-height: 100%;
+      margin: 0 1rem;
       opacity: 0.9;
     }
-
-    img {
-      margin: 0 0.5rem;
-      width: 1.8rem;
-    }
   }
 
-  .social-cont {
-    @include flex(flex, row, center, center, nowrap);
+  nav {
+    height: 5vh;
+    // @include outline;
 
     img {
-      width: 1.6rem;
-      height: auto;
-      opacity: 0.7;
-    }
-
-    img:hover {
+      max-height: 100%;
+      margin: 0 1rem;
       opacity: 0.9;
     }
   }
