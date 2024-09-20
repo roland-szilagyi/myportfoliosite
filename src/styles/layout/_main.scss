@@ -5,11 +5,13 @@ main {
 
   .hero__cont {
     @include flex(flex, column, center, center, nowrap);
+    position: relative;
+    bottom: 10vh;
     // @include outline;
 
     h1 {
       font-family: 'font-primary';
-      font-size: $font-size-md;
+      font-size: $font-size-lg;
       margin: $spacing-md;
       // @include outline;
     }
