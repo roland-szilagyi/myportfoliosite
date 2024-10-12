@@ -9,3 +9,9 @@ $font-secondary: "../assets/fonts";
   src: url(#{$font-secondary}/antonio-variablefont.ttf);
   font-family: 'font-secondary';
 }
+
+$font-tertiary: "../assets/fonts";
+@font-face {
+  src: url(#{$font-secondary}/broken-console.ttf);
+  font-family: 'font-tertiary';
+}

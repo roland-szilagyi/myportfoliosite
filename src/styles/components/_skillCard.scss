@@ -1,0 +1,22 @@
+.skillCard__cont {
+  @include flex(flex, column, center, center, nowrap);
+  width: 10rem;
+  height: 10rem;
+  background-color: white;
+  border: 1px solid rgba($color: grey, $alpha: .7);
+  border-radius: 1rem;
+  font-family: 'font-primary';
+  font-size: 1.2rem;
+  box-shadow: 0 0 5px 1px rgba($color: #FFFFFF, $alpha: .1);
+
+  img {
+    width: 35%;
+    margin: 1.5rem 0;
+  }
+}
+
+.skillCard__cont:hover {
+  // background-color: $color-secondary;
+  box-shadow: 0 0 5px 1px rgba($color: #FFFFFF, $alpha: .5);
+  scale: 1.01;
+}
