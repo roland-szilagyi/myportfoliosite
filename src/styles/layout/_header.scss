@@ -1,28 +1,58 @@
 header {
   @include flex(flex, row, space-between, center, nowrap);
-  @include box(100vw, 10vh);
-  // @include outline;
+  @include box(100vw, 8vh);
+  background-color: $color-button;
 
   .logo__cont {
-    width: auto;
-    height: 5vh;
     // @include outline;
 
     img {
-      max-height: 100%;
-      margin: 0 1rem;
-      opacity: 0.9;
+      height: 28px;
+      margin-left: 1.25rem;
     }
   }
 
   nav {
-    height: 5vh;
     // @include outline;
 
     img {
-      max-height: 100%;
-      margin: 0 1rem;
-      opacity: 0.9;
+      height: 28px;
+      margin-right: 1.25rem;
+
+      @include screen('tablet') {
+        display: none;
+      }
+    }
+
+    ul {
+      display: none;
+
+      @include screen('tablet') {
+        display: flex;
+        justify-content: space-between;
+        width: 40vw;
+        margin-right: 1.25rem;
+        font-family: 'font-tertiary';
+        color: $color-grey;
+        // @include outline;
+      }
+
+      @include screen('desktop') {
+        width: 30vw;
+      }
+
+      @include screen('xldesktop') {
+        width: 25vw;
+      }
+
+      li {
+        line-height: 1.5;
+        transform: translateY(4px);
+      }
+
+      li:hover {
+        color: $color-focus1;
+      }
     }
   }
 }

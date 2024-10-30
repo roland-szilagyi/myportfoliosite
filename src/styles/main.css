@@ -1,5 +1,18 @@
+@charset "UTF-8";
 /*
-@include screen(laptop) {
+  375-480 : Nagyobb telefonok iPhone 11-13 pro Max
+  768-1024 : Közepes méretü tabletek, iPad-ek, kissebb laptopok
+  1024-1440 : Közepes és nagyobb kijelzők. Sok nagy monitor és a modern nagyfelbontású laptopok ebbe a sávba esnek.
+  1440+ : Ultra széles monitorok, nagyfelbontású desktopok és professzionális munkára használt kijelzők.
+
+  375x812 : Ez a felbontás sok felhasználó eszközén jelenik meg, így érdemes alapértelmezett mobil méretként kezelni a mobil-first design során.
+  768x1024 : A legtöbb fejlesztő ezt a felbontást használja referenciaként, amikor tablet-nézetet tervez.
+  1024x768 : nagyon elterjedt a tabletek fekvő módjában, az egyik átmeneti méret a tabletek és asztali monitorok között.
+  1280x800 : A reszponzív designban ez az egyik legjellemzőbb szélesség, ami az asztali (desktop) felhasználói élmény kezdetét jelzi, miközben a tablet nézetek is közel állnak hozzá.
+  1440x900 : 1440px általában az egyik legnagyobb kijelzők közé tartozik, amit érdemes figyelembe venni.
+*/
+/*
+@include screen(desktop) {
   width: 80vw;
 }
 */
@@ -110,24 +123,51 @@ header {
   align-items: center;
   flex-wrap: nowrap;
   width: 100vw;
-  height: 10vh;
-}
-header .logo__cont {
-  width: auto;
-  height: 5vh;
+  height: 8vh;
+  background-color: #124458;
 }
 header .logo__cont img {
-  max-height: 100%;
-  margin: 0 1rem;
-  opacity: 0.9;
-}
-header nav {
-  height: 5vh;
+  height: 28px;
+  margin-left: 1.25rem;
 }
 header nav img {
-  max-height: 100%;
-  margin: 0 1rem;
-  opacity: 0.9;
+  height: 28px;
+  margin-right: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  header nav img {
+    display: none;
+  }
+}
+header nav ul {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+    margin-right: 1.25rem;
+    font-family: "font-tertiary";
+    color: #A5A6A9;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header nav ul {
+    width: 30vw;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header nav ul {
+    width: 25vw;
+  }
+}
+header nav ul li {
+  line-height: 1.5;
+  transform: translateY(4px);
+}
+header nav ul li:hover {
+  color: #FD6B00;
 }
 
 main {
@@ -171,12 +211,4 @@ main .hero__cont p {
 }
 main .hero__cont .button--hero {
   margin: 3rem 0;
-}
-
-.skills {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
 }/*# sourceMappingURL=main.css.map */
