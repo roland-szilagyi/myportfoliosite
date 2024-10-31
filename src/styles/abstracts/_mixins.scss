@@ -23,3 +23,8 @@
 @mixin outline() {
   outline: 1px dashed yellow;
 }
+
+@mixin btn--large() {
+  padding: 1.2rem 3.4rem;
+  font-size: $font-size-xs;
+}

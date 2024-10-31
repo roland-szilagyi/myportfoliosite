@@ -1,4 +1,4 @@
-button {
+.btn {
   display: inline-flex;
   background-color: $color-button;
   border: 0;
@@ -13,8 +13,10 @@ button {
   transition: background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.15s cubic-bezier(0.4, 0, 0.2, 1) 0s;
   user-select: none;
   -webkit-user-select: none;
-  // box-shadow: 0 0 5px 1px rgba($color: black, $alpha: .1);
-  // text-shadow: black 1px 1px 1px;
+
+  @include screen('tablet') {
+    @include btn--large;
+  }
 }
 
 button:hover { 

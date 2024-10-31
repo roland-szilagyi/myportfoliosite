@@ -2,15 +2,27 @@ main {
   @include flex(flex, column, center, center, nowrap);
   @include box(100vw, 92vh);
   position: relative;
-  bottom: 5rem;
+  bottom: 8vh;
 
   .a__cont {
     @include flex(flex, column, space-evenly, center, nowrap);
 
+    @include screen('desktop') {
+      @include flex(flex, row, space-evenly, center, nowrap);
+    }
+
     .r__logo__cont {
-      width: 22%;
+      width: 4.5rem;
       height: auto;
       margin: $spacing-xl;
+
+      @include screen('tablet') {
+        width: 6rem;
+      }
+
+      @include screen('desktop') {
+        width: 4rem;
+      }
 
       // img
     }
@@ -18,12 +30,25 @@ main {
     .titles__cont {
       @include flex(flex, column, center, center, nowrap);
 
+      @include screen('desktop') {
+        @include flex(flex, column, center, flex-start, nowrap);
+      }
+
       h1 {
         font-family: 'font-primary';
         font-size: $font-size-md;
         text-shadow: 0.1rem 0.1rem 0.1rem black;
-        margin: $spacing-md;
+        margin: $spacing-md 0;
         text-align: center;
+
+        @include screen('tablet') {
+          font-size: $font-size-xl;
+        }
+
+        @include screen('desktop') {
+          font-size: $font-size-xxl;
+          margin: 0;
+        }
       }
 
       p {
@@ -31,6 +56,14 @@ main {
         font-size: $font-size-b;
         text-shadow: 0.1rem 0.1rem 0.1rem black;
         color: $color-grey;
+
+        @include screen('tablet') {
+          font-size: $font-size-xs;
+        }
+
+        span {
+          color: $color-focus1;
+        }
       }
     }
   }
@@ -38,14 +71,22 @@ main {
   .b__cont {
     @include flex(flex, column, space-evenly, center, nowrap);
 
+    @include screen('desktop') {
+      @include flex(flex, row, space-evenly, center, nowrap);
+    }
+
     .social__links__cont {
       @include flex(flex, row, center, center, nowrap);
       margin: $spacing-xl;
 
       img {
-        width: 12%;
+        width: 2rem;
         height: auto;
         margin: 0 $spacing-lg;
+
+        @include screen('tablet') {
+          width: 2.2rem;
+        }
       }
     }
 
