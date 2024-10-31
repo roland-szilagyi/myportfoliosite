@@ -35,11 +35,7 @@ main {
       }
 
       h1 {
-        font-family: 'font-primary';
-        font-size: $font-size-md;
-        text-shadow: 0.1rem 0.1rem 0.1rem black;
-        margin: $spacing-md 0;
-        text-align: center;
+        @include title();
 
         @include screen('tablet') {
           font-size: $font-size-xl;
@@ -52,17 +48,10 @@ main {
       }
 
       p {
-        font-family: 'font-tertiary';
-        font-size: $font-size-b;
-        text-shadow: 0.1rem 0.1rem 0.1rem black;
-        color: $color-grey;
+        @include subtitle();
 
         @include screen('tablet') {
           font-size: $font-size-xs;
-        }
-
-        span {
-          color: $color-focus1;
         }
       }
     }

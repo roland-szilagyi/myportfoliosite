@@ -1,0 +1,47 @@
+.contact {
+  @include flex(flex, column, center, center, nowrap);
+  @include box(100vw, 92vh);
+  outline: 1px solid green;
+  position: relative;
+  bottom: 8vh;
+
+  .titles__cont {
+    @include flex(flex, column, center, center, nowrap);
+    @include outline;
+
+    h2 {
+      @include title();
+    }
+
+    p {
+      @include subtitle();
+    }
+  }
+
+  .form__cont {
+    @include flex(flex, column, center, center, nowrap);
+    width: 100vw;
+    @include outline;
+
+    form {
+      width: 90vw;
+    }
+
+    .form__cont__A {
+      @include flex(flex, row, center, flex-end, nowrap);
+
+      .A__title__cont {
+        @include flex(flex, column, center, flex-start, nowrap);
+      }
+
+      .A__img__cont {
+        @include flex(flex, column, flex-end, center, nowrap);
+        width: 1.5rem;
+      }
+    }
+
+    .form__cont__B {
+      @include flex(flex, column, center, stretch, nowrap);
+    }
+  }
+}

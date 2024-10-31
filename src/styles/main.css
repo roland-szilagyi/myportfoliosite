@@ -259,13 +259,13 @@ main .a__cont .titles__cont p {
   text-shadow: 0.1rem 0.1rem 0.1rem black;
   color: #A5A6A9;
 }
+main .a__cont .titles__cont p span {
+  color: #FD6B00;
+}
 @media screen and (min-width: 768px) {
   main .a__cont .titles__cont p {
     font-size: 1.5rem;
   }
-}
-main .a__cont .titles__cont p span {
-  color: #FD6B00;
 }
 main .b__cont {
   display: flex;
@@ -300,4 +300,82 @@ main .b__cont .social__links__cont img {
   main .b__cont .social__links__cont img {
     width: 2.2rem;
   }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100vw;
+  height: 92vh;
+  outline: 1px solid green;
+  position: relative;
+  bottom: 8vh;
+}
+.contact .titles__cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  outline: 1px dashed yellow;
+}
+.contact .titles__cont h2 {
+  font-family: "font-primary";
+  font-size: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+.contact .titles__cont p {
+  font-family: "font-tertiary";
+  font-size: 1.2rem;
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
+  color: #A5A6A9;
+}
+.contact .titles__cont p span {
+  color: #FD6B00;
+}
+.contact .form__cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100vw;
+  outline: 1px dashed yellow;
+}
+.contact .form__cont form {
+  width: 90vw;
+}
+.contact .form__cont .form__cont__A {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+}
+.contact .form__cont .form__cont__A .A__title__cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.contact .form__cont .form__cont__A .A__img__cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 1.5rem;
+}
+.contact .form__cont .form__cont__B {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
 }/*# sourceMappingURL=main.css.map */

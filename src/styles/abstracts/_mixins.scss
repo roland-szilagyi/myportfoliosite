@@ -28,3 +28,22 @@
   padding: 1.2rem 3.4rem;
   font-size: $font-size-xs;
 }
+
+@mixin title() {
+  font-family: 'font-primary';
+  font-size: $font-size-md;
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
+  margin: $spacing-md 0;
+  text-align: center;
+}
+
+@mixin subtitle() {
+  font-family: 'font-tertiary';
+  font-size: $font-size-b;
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
+  color: $color-grey;
+
+  span {
+    color: $color-focus1;
+  }
+}
