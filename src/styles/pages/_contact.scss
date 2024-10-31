@@ -7,7 +7,7 @@
 
   .titles__cont {
     @include flex(flex, column, center, center, nowrap);
-    @include outline;
+    // @include outline;
 
     h2 {
       @include title();
@@ -21,7 +21,7 @@
   .form__cont {
     @include flex(flex, column, center, center, nowrap);
     width: 100vw;
-    @include outline;
+    // @include outline;
 
     form {
       width: 90vw;

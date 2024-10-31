@@ -320,7 +320,6 @@ main .b__cont .social__links__cont img {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  outline: 1px dashed yellow;
 }
 .contact .titles__cont h2 {
   font-family: "font-primary";
@@ -345,7 +344,6 @@ main .b__cont .social__links__cont img {
   align-items: center;
   flex-wrap: nowrap;
   width: 100vw;
-  outline: 1px dashed yellow;
 }
 .contact .form__cont form {
   width: 90vw;
