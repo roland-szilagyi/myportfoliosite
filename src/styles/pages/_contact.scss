@@ -21,7 +21,6 @@
   .form__cont {
     @include flex(flex, column, center, center, nowrap);
     width: 100vw;
-    // @include outline;
 
     form {
       width: 90vw;
