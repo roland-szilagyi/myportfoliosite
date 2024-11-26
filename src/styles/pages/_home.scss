@@ -1,0 +1,153 @@
+.a__cont {
+  @include flex(flex, column, space-evenly, center, nowrap);
+
+  @include screen('desktop') {
+    @include flex(flex, row, space-evenly, center, nowrap);
+  }
+
+  .r__logo__cont {
+    width: 4.5rem;
+    height: auto;
+    margin: $spacing-xl;
+
+    @include screen('tablet') {
+      width: 6rem;
+    }
+
+    @include screen('desktop') {
+      width: 4rem;
+    }
+
+    // img
+  }
+
+  .titles__cont {
+    @include flex(flex, column, center, center, nowrap);
+
+    @include screen('desktop') {
+      @include flex(flex, column, center, flex-start, nowrap);
+    }
+
+    h1 {
+      @include title();
+
+      @include screen('tablet') {
+        font-size: $font-size-xl;
+      }
+
+      @include screen('desktop') {
+        font-size: $font-size-xxl;
+        margin: 0;
+      }
+    }
+
+    p {
+      @include subtitle();
+
+      @include screen('tablet') {
+        font-size: $font-size-xs;
+      }
+    }
+  }
+}
+
+.b__cont {
+  @include flex(flex, column, space-evenly, center, nowrap);
+
+  @include screen('desktop') {
+    @include flex(flex, row, space-evenly, center, nowrap);
+  }
+
+  .social__links__cont {
+    @include flex(flex, row, center, center, nowrap);
+    margin: $spacing-xl;
+
+    img {
+      width: 2rem;
+      height: auto;
+      margin: 0 $spacing-lg;
+
+      @include screen('tablet') {
+        width: 2.2rem;
+      }
+    }
+  }
+
+  // button
+}.a__cont {
+  @include flex(flex, column, space-evenly, center, nowrap);
+
+  @include screen('desktop') {
+    @include flex(flex, row, space-evenly, center, nowrap);
+  }
+
+  .r__logo__cont {
+    width: 4.5rem;
+    height: auto;
+    margin: $spacing-xl;
+
+    @include screen('tablet') {
+      width: 6rem;
+    }
+
+    @include screen('desktop') {
+      width: 4rem;
+    }
+
+    // img
+  }
+
+  .titles__cont {
+    @include flex(flex, column, center, center, nowrap);
+
+    @include screen('desktop') {
+      @include flex(flex, column, center, flex-start, nowrap);
+    }
+
+    h1 {
+      @include title();
+
+      @include screen('tablet') {
+        font-size: $font-size-xl;
+      }
+
+      @include screen('desktop') {
+        font-size: $font-size-xxl;
+        margin: 0;
+      }
+    }
+
+    p {
+      @include subtitle();
+
+      @include screen('tablet') {
+        font-size: $font-size-xs;
+      }
+    }
+  }
+}
+
+.b__cont {
+  @include flex(flex, column, space-evenly, center, nowrap);
+
+  @include screen('desktop') {
+    @include flex(flex, row, space-evenly, center, nowrap);
+  }
+
+  .social__links__cont {
+    @include flex(flex, row, center, center, nowrap);
+    margin: $spacing-xl;
+
+    img {
+      width: 2rem;
+      height: auto;
+      margin: 0 $spacing-lg;
+
+      @include screen('tablet') {
+        width: 2.2rem;
+      }
+    }
+  }
+
+  // button
+}
