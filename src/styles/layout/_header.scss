@@ -1,59 +1,48 @@
 header {
   @include flex(flex, row, space-between, center, nowrap);
   @include box(100vw, 8vh);
-  background-color: $color-button;
+  border-bottom: 1px solid $color-grey;
 
-  .logo__cont {
-    // empty
+  .img-logo {
+    height: 3vh;
+    margin-left: 1.25rem;
+  }
 
-    img {
-      height: 28px;
-      margin-left: 1.25rem;
+  .img-ham {
+    height: 3vh;
+    margin-right: 1.25rem;
+
+    @include screen('tablet') {
+      display: none;
     }
   }
 
-  nav {
-    // empty
+  ul {
+    display: none;
 
-    img {
-      height: 28px;
+    @include screen('tablet') {
+      @include flex(flex, row, space-between, center, nowrap);
+      width: 40vw;
       margin-right: 1.25rem;
-
-      @include screen('tablet') {
-        display: none;
-      }
+      font-family: 'font-tertiary';
+      color: $color-grey;
     }
 
-    ul {
-      display: none;
+    @include screen('desktop') {
+      width: 30vw;
+    }
 
-      @include screen('tablet') {
-        display: flex;
-        justify-content: space-between;
-        width: 40vw;
-        margin-right: 1.25rem;
-        font-family: 'font-tertiary';
-        color: $color-grey;
-        // @include outline;
-      }
+    @include screen('xldesktop') {
+      width: 25vw;
+    }
 
-      @include screen('desktop') {
-        width: 30vw;
-      }
+    li {
+      transform: translateY(4px);
+      font-size: 1.2rem;
+    }
 
-      @include screen('xldesktop') {
-        width: 25vw;
-      }
-
-      li {
-        line-height: 1.5;
-        transform: translateY(4px);
-        font-size: 1.2rem;
-      }
-
-      li:hover {
-        color: $color-focus1;
-      }
+    li:hover {
+      color: $color-focus1;
     }
   }
 }

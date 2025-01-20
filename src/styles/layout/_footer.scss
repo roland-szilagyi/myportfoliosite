@@ -1,0 +1,10 @@
+footer {
+  text-align: center;
+  @include box(100vw, 6vh);
+
+  p {
+    font-family: 'font-primary';
+    font-size: 0.6rem;
+    color: $color-grey;
+  }
+}

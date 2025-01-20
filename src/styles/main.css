@@ -1,10 +1,5 @@
 @charset "UTF-8";
 /*
-  375-480 : Nagyobb telefonok iPhone 11-13 pro Max
-  768-1024 : Közepes méretü tabletek, iPad-ek, kissebb laptopok
-  1024-1440 : Közepes és nagyobb kijelzők. Sok nagy monitor és a modern nagyfelbontású laptopok ebbe a sávba esnek.
-  1440+ : Ultra széles monitorok, nagyfelbontású desktopok és professzionális munkára használt kijelzők.
-
   375x812 : Ez a felbontás sok felhasználó eszközén jelenik meg, így érdemes alapértelmezett mobil méretként kezelni a mobil-first design során.
   768x1024 : A legtöbb fejlesztő ezt a felbontást használja referenciaként, amikor tablet-nézetet tervez.
   1024x768 : nagyon elterjedt a tabletek fekvő módjában, az egyik átmeneti méret a tabletek és asztali monitorok között.
@@ -130,28 +125,31 @@ header {
   flex-wrap: nowrap;
   width: 100vw;
   height: 8vh;
-  background-color: #124458;
+  border-bottom: 1px solid #A5A6A9;
 }
-header .logo__cont img {
-  height: 28px;
+header .img-logo {
+  height: 3vh;
   margin-left: 1.25rem;
 }
-header nav img {
-  height: 28px;
+header .img-ham {
+  height: 3vh;
   margin-right: 1.25rem;
 }
 @media screen and (min-width: 768px) {
-  header nav img {
+  header .img-ham {
     display: none;
   }
 }
-header nav ul {
+header ul {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  header nav ul {
+  header ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
     width: 40vw;
     margin-right: 1.25rem;
     font-family: "font-tertiary";
@@ -159,21 +157,20 @@ header nav ul {
   }
 }
 @media screen and (min-width: 1024px) {
-  header nav ul {
+  header ul {
     width: 30vw;
   }
 }
 @media screen and (min-width: 1280px) {
-  header nav ul {
+  header ul {
     width: 25vw;
   }
 }
-header nav ul li {
-  line-height: 1.5;
+header ul li {
   transform: translateY(4px);
   font-size: 1.2rem;
 }
-header nav ul li:hover {
+header ul li:hover {
   color: #FD6B00;
 }
 
@@ -184,9 +181,20 @@ main {
   align-items: center;
   flex-wrap: nowrap;
   width: 100vw;
-  height: 92vh;
+  height: 86vh;
   position: relative;
   bottom: 8vh;
+}
+
+footer {
+  text-align: center;
+  width: 100vw;
+  height: 6vh;
+}
+footer p {
+  font-family: "font-primary";
+  font-size: 0.6rem;
+  color: #A5A6A9;
 }
 
 .contact {

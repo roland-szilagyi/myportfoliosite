@@ -1,6 +1,6 @@
 main {
   @include flex(flex, column, center, center, nowrap);
-  @include box(100vw, 92vh);
+  @include box(100vw, 86vh);
   position: relative;
   bottom: 8vh;
 }
