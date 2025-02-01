@@ -1,7 +1,7 @@
 header {
   @include flex(flex, row, space-between, center, nowrap);
   @include box(100vw, 8vh);
-  border-bottom: 1px solid $color-grey;
+  background-color: rgba($color: black, $alpha: .2);
 
   .img-logo {
     height: 3vh;
