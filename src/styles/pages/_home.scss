@@ -42,10 +42,10 @@
     }
 
     p {
-      @include subtitle();
+      font-size: 0.9rem;
 
       @include screen('tablet') {
-        font-size: $font-size-xs;
+        font-size: 0.9rem;
       }
     }
   }
@@ -119,9 +119,10 @@
 
     p {
       @include subtitle();
+      font-size: 0.9rem;
 
       @include screen('tablet') {
-        font-size: $font-size-xs;
+        font-size: 0.9rem;
       }
     }
   }

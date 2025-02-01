@@ -1,6 +1,6 @@
 $font-primary: "../assets/fonts";
 @font-face {
-  src: url(#{$font-primary}/montserrat-arabicsemibold.otf);
+  src: url(#{$font-primary}/righteous-regular.ttf);
   font-family: 'font-primary';
 }
 
@@ -12,6 +12,6 @@ $font-secondary: "../assets/fonts";
 
 $font-tertiary: "../assets/fonts";
 @font-face {
-  src: url(#{$font-secondary}/chakraPetch-bold.ttf);
+  src: url(#{$font-secondary}/Pressstart2P-Regular.ttf);
   font-family: 'font-tertiary';
 }
